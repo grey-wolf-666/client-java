@@ -7,7 +7,7 @@ metadata:
 spec:
   group: apps.quark.io
   names:
-    kind: DatabaseSyncs
+    kind: DatabaseSync
     listKind: DatabaseSyncsList
     plural: databasesyncs
     singular: databasesync
@@ -18,7 +18,7 @@ spec:
       storage: true
       schema:
         openAPIV3Schema:
-          description: The Schema for the ResourceSync API
+          description: The Schema for the DatabaseSync API
           type: object
           properties:
             spec:
@@ -27,13 +27,10 @@ spec:
               properties:
                 syncData:
                   type: string
-                  enum:
-                    - include-delete
-                    - exclude-delete
                 resourceType:
                   type: string
             status:
-              description: Defines the observed state of ResourceSync
+              description: Defines the observed state of DatabaseSync
               type: object
               properties:
                 state:
