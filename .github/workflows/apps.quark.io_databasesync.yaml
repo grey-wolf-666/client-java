@@ -8,7 +8,7 @@ spec:
   group: apps.quark.io
   names:
     kind: DatabaseSync
-    listKind: DatabaseSyncsList
+    listKind: DatabaseSyncList
     plural: databasesyncs
     singular: databasesync
   scope: Namespaced
